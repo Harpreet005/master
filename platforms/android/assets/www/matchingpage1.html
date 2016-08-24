@@ -1,0 +1,53 @@
+<head>
+<meta name="viewport" content="width=device-width; initial-scale=1.0;">
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/jquer_libs.js"></script>
+ <script type="text/javascript" src="js/function.js"></script>
+</head>
+<body class="location4" onload="notificationcount();">
+
+<div id="main-content">
+<div id="header"> </div> <!-- header.html -->
+<div id="sidebar"></div> <!-- sidemenubar.html -->
+</div>
+
+<div class="student-matching">
+         <div class="student-matching-logo">  
+            <div class="matching_logo_left">
+                <img src="img/md5g7hn.png">
+            </div>
+            </div>
+          <div class="student-matching-members">  
+           <img src="img/startpage.png">
+          </div>
+      
+          <div class="heading">  
+            <h1> Lets Find How you Learn </h1>
+            <p> and find the right professor for you.</p>
+          </div>
+
+      
+          <div class="student-matching-button">
+             <div class="student-matching-start">  
+               <input type="button" name="start" id="StdStartBtn" value="START">
+             </div>
+           </div>
+
+
+    </div>
+</body></html>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+    $('#sidebar').hide();   
+    $('#header').load('header.html');
+});
+
+$("#StdStartBtn").click(function(){
+  window.location.href="student-test1.html";
+});
+
+</script>
